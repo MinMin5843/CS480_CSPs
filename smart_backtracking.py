@@ -1,4 +1,4 @@
-class SudouCSP:
+class SudokuCSP:
     def __init__(self):
         self.grid = grid
         self.domains = {
