@@ -1,5 +1,5 @@
 class SudokuCSP:
-    def __init__(self):
+    def __init__(self, grid):
         self.grid = grid
         self.domains = {
             (r,c): self.get_domain(r,c) if grid[r][c] == 0 else {grid[r][c]}
@@ -143,4 +143,3 @@ class SudokuCSP:
             self.domains[cell] = old_domain
 
         return False
-
